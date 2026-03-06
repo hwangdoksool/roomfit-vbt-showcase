@@ -47,6 +47,8 @@ a{color:var(--primary);text-decoration:none}
   display:flex;align-items:center;justify-content:center;
   font-size:1.1rem;color:#fff;font-weight:900;
 }
+.logo-img{height:28px;width:auto;transition:var(--transition)}
+[data-theme="dark"] .logo-img{filter:brightness(0) invert(1) brightness(1.1)}
 .logo span{color:var(--primary)}
 .header-actions{display:flex;align-items:center;gap:12px}
 
@@ -353,8 +355,8 @@ a{color:var(--primary);text-decoration:none}
 <header class="header">
   <div class="header-inner">
     <div class="logo">
-      <div class="logo-icon">R</div>
-      <div>Roomfit <span>AI-VBT</span> Report</div>
+      <img src="https://wspn-images.wespion.workers.dev/roomfit-logo.png" alt="Roomfit" class="logo-img">
+      <div><span>AI-VBT</span> Report</div>
     </div>
     <div class="header-actions">
       <span class="theme-label">🌙</span>
